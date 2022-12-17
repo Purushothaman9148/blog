@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Create = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
-    const [author, setAuthor] = useState('mario');
+    const [author, setAuthor] = useState('Purushothaman');
     const [isPending, setIsPending] = useState(false);
     const navigate = useNavigate();
     const handelSubmit = (e) => {
@@ -30,7 +30,7 @@ const Create = () => {
                 value={title} onChange={(e) => { setTitle(e.target.value) }}>
             </input>
             <label>Blog Author:</label>
-            <select value={author} onChange={(e) => { setAuthor(e.target.author) }}>
+            <select reqired value={author} onChange={(e) => { setAuthor(e.target.author) }}>
                 <option value="Purushothaman">Purushothaman</option>
             </select>
             <label>Blog body:</label>
