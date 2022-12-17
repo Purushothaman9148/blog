@@ -13,7 +13,6 @@ const BlogList = ({ blogs }) => {
                         <br></br>
                         <div>{res.body}</div>
                     </Link>
-                    {/* <button onClick={() => { handleDeleteClick(res.id) }}>Delte</button> */}
                 </div>
             ))
             }

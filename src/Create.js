@@ -30,7 +30,7 @@ const Create = () => {
                 value={title} onChange={(e) => { setTitle(e.target.value) }}>
             </input>
             <label>Blog Author:</label>
-            <select reqired value={author} onChange={(e) => { setAuthor(e.target.author) }}>
+            <select value={author} onChange={(e) => { setAuthor(e.target.author) }}>
                 <option value="Purushothaman">Purushothaman</option>
             </select>
             <label>Blog body:</label>
