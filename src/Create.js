@@ -29,14 +29,14 @@ const Create = () => {
                 type="text" required
                 value={title} onChange={(e) => { setTitle(e.target.value) }}>
             </input>
+            <label>Blog Author:</label>
+            <select value={author} onChange={(e) => { setAuthor(e.target.author) }}>
+                <option value="Purushothaman">Purushothaman</option>
+            </select>
             <label>Blog body:</label>
             <textarea required value={body} onChange={(e) => { setBody(e.target.value) }}>
             </textarea>
-            <label>Blog body:</label>
-            <select value={author} onChange={(e) => { setAuthor(e.target.author) }}>
-                <option value="mario">mario</option>
-                <option value="yoshi">yoshi</option>
-            </select>
+
             {!isPending && <button type="submit">Add Blog</button>}
         </form>
     </div>);
