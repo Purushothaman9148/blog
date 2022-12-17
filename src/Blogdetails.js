@@ -13,9 +13,11 @@ const BlogDetails = () => {
             navigate('/');
         });
     }
+    const styles = {
+        margin: "10px"
+    }
     return (
         <div className="blog-details">
-            <button onClick={() => navigate(-1)}>back</button>
             {isPending && <div>Loading...</div>}
             {error && <div>{error}</div>}
             {blogs && (<article>
@@ -23,6 +25,7 @@ const BlogDetails = () => {
                 <p>Written by {blogs.author}</p>
                 <div>{blogs.body}</div>
                 <button onClick={handleClick}>delete</button>
+                <button onClick={() => navigate(-1)} style={styles}>⬅️ back</button>
             </article>)}
         </div>
     );
