@@ -4,10 +4,10 @@ import useFetch from "./usefetch";
 const BlogDetails = () => {
     const navigate = useNavigate();
     const { id } = useParams();
-    const { data: blogs, isPending, error } = useFetch(`http://localhost:8000/data/${id}`);
+    const { data: blogs, isPending, error } = useFetch(`https://jsonserver-production-96f3.up.railway.app/data/${id}`);
 
     const handleClick = () => {
-        fetch('http://localhost:8000/data/' + blogs.id, {
+        fetch('https://jsonserver-production-96f3.up.railway.app/data/' + blogs.id, {
             method: 'DELETE',
         }).then(() => {
             navigate('/');

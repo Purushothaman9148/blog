@@ -2,7 +2,7 @@ import BlogList from "./BlogList";
 import useFetch from "./usefetch";
 
 const Home = () => {
-    const { data: blogs, isPending, error } = useFetch('http://localhost:8000/data');
+    const { data: blogs, isPending, error } = useFetch('https://jsonserver-production-96f3.up.railway.app/data');
 
     return (
         <div className="home">

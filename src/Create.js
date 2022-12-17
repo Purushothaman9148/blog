@@ -12,7 +12,7 @@ const Create = () => {
         const blog = { title, body, author };
         setIsPending(true);
         console.log(blog);
-        fetch('http://localhost:8000/data/', {
+        fetch('https://jsonserver-production-96f3.up.railway.app/data/', {
             method: 'POST',
             headers: { 'Content-Type': "application/json" },
             body: JSON.stringify(blog)
