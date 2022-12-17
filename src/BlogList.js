@@ -7,7 +7,10 @@ const BlogList = ({ blogs }) => {
                 <div className="blog-preview" key={res.id}>
                     <Link to={`/blog/${res.id}`}>
                         <h2>{res.title}</h2>
-                        <p>Written by {res.author}</p>
+                        <hr></hr>
+                        <br></br>
+                        <h5>Written by {res.author}</h5>
+                        <br></br>
                         <div>{res.body}</div>
                     </Link>
                     {/* <button onClick={() => { handleDeleteClick(res.id) }}>Delte</button> */}
