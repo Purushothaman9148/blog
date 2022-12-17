@@ -12,5 +12,6 @@ const Navabar = () => {
         </nav >
     );
 }
+//Navbar
 
 export default Navabar;
