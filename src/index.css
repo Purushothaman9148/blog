@@ -44,7 +44,8 @@
   padding:10px 16px;
   margin:20px 0;
   border-bottom: 1px solid #fafafa;
-  
+
+  box-shadow: 1px 3px 5px rgba(252, 12, 112, 0.1);
 }
 
 .blog-preview:hover{
